@@ -1,0 +1,59 @@
+:root {
+  --primary: #fff;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  /* border: azure; */
+  cursor: pointer;
+  color: white;
+  border: 1px solid rgb(241, 235, 235);
+  border-radius: 40px;
+  width: 137px;
+}
+
+
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btn--primary {
+  background-color: var(--primary);
+  color: #e0dada;
+  border: 1px solid var(--primary);
+}
+
+.btn--outline {
+  background-color: white;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 18px;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.btn--large:hover .btn:not(:disabled)
+.btn--medium:hover {
+  transition: all 0.3s ease-out;
+  background: rgb(177, 174, 174);
+  color: rgb(5, 5, 5);
+  transition: 250ms;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  border: 2px solid rgb(235, 232, 232);
+  border-radius: 40px;
+  width: 10px;
+}
